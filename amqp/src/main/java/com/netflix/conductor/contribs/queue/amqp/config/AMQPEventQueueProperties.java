@@ -28,15 +28,11 @@ public class AMQPEventQueueProperties {
 
     private Duration pollTimeDuration = Duration.ofMillis(100);
 
-    private String hosts = ConnectionFactory.DEFAULT_HOST;
+    private AMQPCredentials credentials;
 
-    private String username = ConnectionFactory.DEFAULT_USER;
+    
 
-    private String password = ConnectionFactory.DEFAULT_PASS;
-
-    private String virtualHost = ConnectionFactory.DEFAULT_VHOST;
-
-    private int port = PROTOCOL.PORT;
+    
 
     private int connectionTimeoutInMilliSecs = 180000;
     private int networkRecoveryIntervalInMilliSecs = 5000;
